@@ -1,24 +1,23 @@
 {
   "expo": {
     "name": "Ejemplo3Camara",
-    "slug": "Ejemplo3Camara",
+    "slug": "ejemplo3camara",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      "package": "com.ejemplo.ejemplo3camara",
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Usamos la cámara para tomar fotos dentro de la app.",
+          "recordAudioAndroid": false
+        }
+      ]
+    ]
   }
 }
