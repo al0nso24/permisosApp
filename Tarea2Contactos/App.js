@@ -1,11 +1,11 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { View, Text, FlatList, TextInput, Button, StyleSheet, Linking, ActivityIndicator, AppState } from 'react-native';
-import * as Contacts from 'expo-contacts';
-import ModalPermiso from './components/ModalPermiso';
-import ItemContacto from './components/ItemContacto';
+import * as Contacts from 'expo-contacts/legacy';
+import ModalPermiso from './src/components/ModalPermiso';
+import ItemContacto from './src/components/ItemContacto';
 
 export default function App() {
-  const [perm, setPerm] = useState(null); // { status, canAskAgain }
+  const [perm, setPerm] = useState(null); //{ status, canAskAgain }
   const [mostrarModal, setMostrarModal] = useState(false);
   const [contactos, setContactos] = useState([]);
   const [busqueda, setBusqueda] = useState('');
@@ -111,7 +111,8 @@ const s = StyleSheet.create({
   c: {
     flex: 1,
     padding: 16,
-    paddingTop: 56
+    paddingTop: 77,
+    paddingBottom: 42
   },
 
   centro: {
