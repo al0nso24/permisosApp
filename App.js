@@ -10,7 +10,7 @@ const P = PermissionsAndroid.PERMISSIONS;
 const PERMISOS = [
   { key: P.CAMERA, nombre: 'Cámara' },
   { key: P.RECORD_AUDIO, nombre: 'Micrófono' },
-  // POST_NOTIFICATIONS solo existe desde Android 13 (API 33)
+  //POST_NOTIFICATIONS solo existe desde Android 13 (API 33)
   ...(Platform.Version >= 33
     ? [{ key: P.POST_NOTIFICATIONS, nombre: 'Notificaciones' }]
     : []),
