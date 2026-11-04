@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Ejemplo2Ubicacion",
+    "slug": "ejemplo2ubicacion",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "android": {
+      "package": "com.ejemplo.ejemplo2ubicacion",
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Usamos tu ubicación para mostrarla en pantalla."
+        }
+      ]
+    ]
+  }
+}
