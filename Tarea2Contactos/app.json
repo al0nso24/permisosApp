@@ -1,24 +1,22 @@
 {
   "expo": {
     "name": "Tarea2Contactos",
-    "slug": "Tarea2Contactos",
+    "slug": "tarea2contactos",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      "package": "com.ejemplo.tarea2contactos",
+      "permissions": [
+        "android.permission.READ_CONTACTS"
+      ]
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Usamos tus contactos para mostrarlos en la lista."
+        }
+      ]
+    ]
   }
 }
