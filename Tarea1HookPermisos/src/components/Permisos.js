@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, StyleSheet, PermissionsAndroid, Alert, ScrollView } from 'react-native';
-import TarjetaPermiso from './components/TarjetaPermiso';
+import TarjetaPermiso from './TarjetaPermiso';
 
 const P = PermissionsAndroid.PERMISSIONS;
 
