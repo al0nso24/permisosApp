@@ -1,8 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import {
-  View, Text, FlatList, TextInput, Button,
-  StyleSheet, Linking, ActivityIndicator, AppState,
-} from 'react-native';
+import { View, Text, FlatList, TextInput, Button, StyleSheet, Linking, ActivityIndicator, AppState } from 'react-native';
 import * as Contacts from 'expo-contacts';
 import ModalPermiso from './components/ModalPermiso';
 import ItemContacto from './components/ItemContacto';
