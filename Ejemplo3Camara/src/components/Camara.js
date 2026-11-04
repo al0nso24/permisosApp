@@ -78,18 +78,52 @@ export default function App() {
 }
 
 const s = StyleSheet.create({
-    centro: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 24, gap: 12 },
-    icono: { fontSize: 64 },
-    titulo: { fontSize: 22, fontWeight: 'bold' },
-    texto: { textAlign: 'center', color: '#555' },
-    preview: { width: 300, height: 400, borderRadius: 12 },
-    barra: {
-        position: 'absolute', bottom: 40, left: 0, right: 0,
-        flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center',
+    centro: { 
+        flex: 1, 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        padding: 24, gap: 12 
     },
-    btn: { fontSize: 32 },
+
+    icono: { 
+        fontSize: 64 
+    },
+
+    titulo: { 
+        fontSize: 22, 
+        fontWeight: 'bold' 
+    },
+    
+    texto: { 
+        textAlign: 'center', 
+        color: '#555' 
+    },
+
+    preview: { 
+        width: 300, 
+        height: 400, 
+        borderRadius: 12 
+    },
+
+    barra: {
+        position: 'absolute', 
+        bottom: 40, left: 0, 
+        right: 0,
+        flexDirection: 'row', 
+        justifyContent: 'space-around', 
+        alignItems: 'center',
+    },
+
+    btn: { 
+        fontSize: 32 
+    },
+
     disparador: {
-        width: 72, height: 72, borderRadius: 36,
-        backgroundColor: '#fff', borderWidth: 4, borderColor: '#ccc',
+        width: 72, 
+        height: 72, 
+        borderRadius: 36,
+        backgroundColor: '#fff',
+        borderWidth: 4, 
+        borderColor: '#ccc',
     },
 });
