@@ -4,7 +4,7 @@ import {
 } from 'react-native';
 import * as Location from 'expo-location';
 
-export default function App() {
+export default function Ubicacion() {
     const [coords, setCoords] = useState(null);
     const [estado, setEstado] = useState('Sin solicitar');
     const [cargando, setCargando] = useState(false);
