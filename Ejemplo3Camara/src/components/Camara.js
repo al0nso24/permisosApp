@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { View, Text, Button, StyleSheet, Image, TouchableOpacity, Linking } from 'react-native';
 import { CameraView, useCameraPermissions } from 'expo-camera';
 
-export default function App() {
+export default function Camara() {
     const [permission, requestPermission] = useCameraPermissions();
     const [facing, setFacing] = useState('back');
     const [foto, setFoto] = useState(null);
